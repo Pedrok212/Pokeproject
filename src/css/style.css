@@ -1,0 +1,180 @@
+body {
+    font-family:'Poppins', sans-serif;
+    background-color: #d0c5b2;
+    color: black;
+    margin: 0 auto;
+}
+
+body main,
+body header{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+body.modo-escuro{
+    background-color: #302e2d;
+    color: white;
+}
+
+header { 
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0;
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+}
+.logo-port{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all;
+}
+
+.logo-port:hover{
+
+    background-color: #f94f33 ;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 500px;
+}
+
+header .pokebola,
+header .imagem-botao{
+   
+    width: 33px;
+    text-decoration: none;
+    }
+    
+
+
+header #botao-alterador{
+    background: none;
+    border: none;
+}
+
+.pokebola:hover,
+#botao-alterador:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.25);
+    cursor: pointer;
+
+}
+
+main{
+    padding: 25px;
+    
+}
+
+.lista-pokemons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-pokemon{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #333333
+}
+
+.cartao-pokemon:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #96d9d6;
+    
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes{
+display: flex;
+justify-content: space-between;
+border: 1px solid #333333
+}
+
+
+main .cartao-pokemon .informacoes {
+     padding: 7px;
+     text-transform: uppercase;
+
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+}
+
+.tipos{
+   display: flex;
+   gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 15px;
+
+}
+
+.grama{
+    background-color: #7ac74c;
+  
+
+}
+
+.veneno{
+background-color: #df67ddfb;
+    
+}
+
+.fogo{
+    background-color: #ee1830;
+}
+
+.agua{
+    background-color: #6350f0;
+}
+
+.voador{
+    background-color: #6390f0;
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-x: hidden;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+footer{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #d0c5b2;
+}
+
+
+.modo-escuro{
+   
+    background-color: #302e2d;
+    color: black;
+}
